@@ -11,8 +11,7 @@ on = True
 intro = (f"\nWelcome to the Cyber Cafe!\nWhere coffee is brewed from 1s and 0s!\nWhat would you like? "
          f"({menu_obj.get_items()}): ")
 while on:
-    selection = input(intro).lower()
-    if selection == "report":
+    if (selection := input(intro).lower()) == "report":
         maker.report()
         handler.report()
     elif selection == "off":
