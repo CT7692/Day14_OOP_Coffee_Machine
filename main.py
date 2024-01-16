@@ -8,7 +8,7 @@ menu_obj = Menu()
 
 
 on = True
-intro = (f"\nWelcome to the Cyber Cafe!\nWhere coffee is brewed from 1s and 0s!\nWhat would you like? "
+intro = ("\nWelcome to the Cyber Cafe!\nWhere coffee is brewed from 1s and 0s!\nWhat would you like? "
          f"({menu_obj.get_items()}): ")
 while on:
     selection = input(intro).lower()
